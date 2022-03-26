@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7-e-p2</title>
+	<style type="text/css">
+
+		table{
+			align-content: center;
+			margin: auto;}
+
+
+		td {
+			border:none;
+			padding:10px;}
+
+		tr>td:nth-child(2){
+			display: flex;}
+
+		input[type^="text"],
+		input[type^="email"],
+		input[type^="date"],
+		input[type^="number"],
+		input[type^="time"]
+		{flex-grow: 1;}
+
+		.name{width: 400px;}
+		.center {
+			justify-content: center;
+			text-align: center;}
+
+		
+	</style>
+</head>
+<body>
+<form method="" action="">
+	<div>
+<table width="420" height="400" cellpadding="10" cellspacing="">
+	<tr>
+		<td class="name">Full Name</td>
+		<td><input type="text" name="Fullname" pattern="[a-zA-z]{3,30}"></td>
+	</tr>
+	<tr>
+		<td class="name">Email</td>
+		<td><input type="Email" name="Email"></td>
+	</tr>
+	<tr>
+		<td class="name">Date you can start</td>
+		<td><input type="Date" name="Date"></td>
+	</tr>
+	<tr>
+		<td class="name">Morning shift preference</td>
+		<td><input type="time" name="time"></td>
+	</tr>
+	<tr>
+		<td class="name">Evening shift perference</td>
+		<td><input  type="time" name="time"></td>
+	</tr>
+	<tr>
+		<td class="name">How many hours you can work? In multiple of 3</td>
+		<td><input type="number" name="quantity" id="quantity"  min="3" max="9"></td>
+	</tr>
+	<tr>
+		<td class="name">Distance you willing to commute to volunteer center?</td>
+		<td>1<input type="range" name="range"  min="1" max="15" value="3">15</td>
+	</tr>
+	<tr>
+		<td class="name">You currency perference for payment?</td>
+		<td>
+			<input type="radio" name="wish">&#163;
+			<input type="radio" name="wish">&#165;
+			<input type="radio" name="wish">&euro;
+		</td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2"><textarea id="home address" name="home address" rows="6" cols="40">Type your home address</textarea></td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2">
+			<s>You will be given daily meals</s>
+		</td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2">
+			<input type="checkbox" name="agree" checked="true" disabled="true">I agree to all terms and conditions
+		</td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2">
+			Prove you are not robot: 10&#60;20<input type="checkbox" name="choice">
+		</td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2">
+			<button input type="submit" name="Volunteer">Volunteer now!</button>
+		</td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2">
+			<button input type="reset" name="Start Over">Start Over</button>
+		</td>
+	</tr>
+	<tr>
+		<td class="center" colspan="2">
+			For more informaton, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" target="_blank">website</a>
+		</td>
+	</tr>
+</table>
+</div>
+</form>
+</body>
+</html>

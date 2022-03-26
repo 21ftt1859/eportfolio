@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7-3-p1</title>
+	<style type="text/css">
+
+		body{
+			text-align: center;
+			align-content: center;
+			margin: auto;
+			width:600px;}
+
+		input.time {width:100px;}
+		input.hours {width:135px;}
+
+		tr {
+			border:1px solid;
+			display:grid;
+			padding:0px;
+			grid-template-columns: 60% 40%;
+			grid-gap:10px;
+			text-align: left;}
+
+		div>h3 {text-align: center;
+			align-content: center;}
+
+		div>table {
+			margin:auto;
+			padding: 0;
+			align-content: center;
+			width:auto;
+		}
+
+		tr:nth-child(9){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+		tr:nth-child(10){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+		tr:nth-child(11){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+		tr:nth-child(12){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+		tr:nth-child(13){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+		tr:nth-child(14){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+		tr:nth-child(15){
+			grid-template-columns: 100%;
+			text-align:center;
+			padding: 10px;
+			width:auto;}
+
+	</style>
+</head>
+<body>
+ <div>
+<h3>Registration for Covid-19 Volunteer - C19 - Team</h3>
+ </div>
+<form method="" action="">
+	<div>
+<table width="420" height="400" cellpadding="10" cellspacing="">
+	<tr>
+		<td>Full Name</td>
+		<td><input type="text" name="Fullname" pattern="[a-zA-z]{3,30}"></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><input type="Email" name="Email"></td>
+	</tr>
+	<tr>
+		<td>Date you can start</td>
+		<td><input type="Date" name="Date"></td>
+	</tr>
+	<tr>
+		<td>Morning shift preference</td>
+		<td><input class="time" type="time" name="time"></td>
+	</tr>
+	<tr>
+		<td>Evening shift perference</td>
+		<td><input class="time" type="time" name="time"></td>
+	</tr>
+	<tr>
+		<td>How many hours you can work? In multiple of 3</td>
+		<td><input class="hours" type="number" name="quantity" id="quantity"  min="3" max="9"></td>
+	</tr>
+	<tr>
+		<td>Distance you willing to commute to volunteer center?</td>
+		<td>1<input type="range" name="range"  min="1" max="15" value="3">15</td>
+	</tr>
+	<tr>
+		<td>You currency perference for payment?</td>
+		<td>
+			<input type="radio" name="wish">&#163;
+			<input type="radio" name="wish">&#165;
+			<input type="radio" name="wish">&euro;
+		</td>
+	</tr>
+	<tr>
+		<td><textarea id="home address" name="home address" rows="6" cols="40">Type your home address</textarea></td>
+	</tr>
+	<tr>
+		<td>
+			<center><s>You will be given daily meals</center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><input type="checkbox" name="agree" checked="true" disabled="true">I agree to all terms and conditions</center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center>Prove you are not robot: 10&#60;20<input type="checkbox" name="choice"></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><button input type="submit" name="Volunteer">Volunteer now!</button></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><button input type="reset" name="Start Over">Start Over</button></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center>For more informaton, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" target="_blank">website</a></center>
+		</td>
+	</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
